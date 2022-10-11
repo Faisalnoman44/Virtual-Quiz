@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
 
-const Option = ({option, correctAnswer}) => {
+const Option = ({option, correctAnswer, number}) => {
     
 
     const handleCheck= value =>{
@@ -16,7 +15,7 @@ const Option = ({option, correctAnswer}) => {
 
     return (
         <div className='border border-blue-500 p-3 m-1 rounded-md bg-white '>
-            <input className='text-black ans-option' onChange={(event)=>handleCheck(event.target.value)} type="radio" name="ans" value={option} />{option}
+            <input className='text-black ans-option' onChange={(event)=>handleCheck(event.target.value)} type="radio" name={number} value={option} />{option}
         </div>
     );
 };
