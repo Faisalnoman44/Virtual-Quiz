@@ -1,14 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-const Option = ({option}) => {
+const Option = ({option, correctAnswer}) => {
+    
 
-    const handleCheck= event =>{
-        console.log(event.target.value)
+    const handleCheck= value =>{
+        if(value === correctAnswer){
+            console.log('right');
+        }
+        else{
+            console.log('wrong')
+        }
+        
+
     }
 
     return (
-        <div className='border border-gray-500 p-3 m-1 rounded-md'>
-            <input onChange={()=>handleCheck()} type="radio" name="" id="" />{option}
+        <div className='border border-blue-500 p-3 m-1 rounded-md bg-white '>
+            <input className='text-black ans-option' onChange={(event)=>handleCheck(event.target.value)} type="radio" name="ans" value={option} />{option}
         </div>
     );
 };
