@@ -3,25 +3,32 @@ import { Link } from 'react-router-dom';
 
 const Nav = () => {
     return (
-        <nav>
-            <div className="navbar shadow-md bg-base-100 md:px-16">
+        <nav className='mb-20'>
+            <div className="navbar bg-base-100 lg:px-28 shadow-lg fixed top-0 z-50">
                 <div className="flex-1">
                     <a href='/' className="btn btn-ghost normal-case text-xl">Virtual QUIZ</a>
                 </div>
-                <div className="flex-none text-lg gap-6 font-semibold text-blue-500">
-                    <Link to='/'>Topics</Link>
-                    <Link to='/statistics'>Statistics</Link>
-                    <Link to='/blogs'>Blog</Link>
+                <div className="flex-none">
                     <div className="dropdown dropdown-end">
-                        <label tabIndex={0} className="btn btn-ghost btn-circle avatar  block md:hidden">
-                            <div className="w-10 rounded-full">
-                                <img alt='' src="https://placeimg.com/80/80/people" />
+                        <div className='hidden md:block'>
+                            <ul className='flex text-lg font-semibold gap-7 '>
+                                <li><Link to='/'>Topics</Link></li>
+                                <li><Link to='/statistics'>Statistics</Link></li>
+                                <li><Link to='/blog'>blog</Link></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div className="dropdown dropdown-end">
+                        <label tabIndex={0} className="btn btn-ghost btn-circle block md:hidden">
+                            <div className=' flex justify-center '>
+                                {/* <FaBars className='text-xl mt-3'></FaBars> */}
                             </div>
                         </label>
                         <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
                             <li><Link to='/'>Topics</Link></li>
                             <li><Link to='/statistics'>Statistics</Link></li>
-                            <li><Link to='/blogs'>Blog</Link></li>
+                            <li><Link to='/blog'>blog</Link></li>
                         </ul>
                     </div>
                 </div>
