@@ -14,7 +14,8 @@ const Nav = () => {
                     <div className="dropdown dropdown-end">
                         <div className='hidden md:block'>
                             <ul className='flex text-lg font-semibold gap-7 '>
-                                <li><Link to='/'>Topics</Link></li>
+                                <li><Link to='/home'>Home</Link></li>
+                                <li><Link to='/topics'>Topics</Link></li>
                                 <li><Link to='/statistics'>Statistics</Link></li>
                                 <li><Link to='/blog'>blog</Link></li>
                             </ul>
@@ -28,7 +29,8 @@ const Nav = () => {
                             </div>
                         </label>
                         <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-                            <li><Link to='/'>Topics</Link></li>
+                            <li><Link to='/home'>home</Link></li>
+                            <li><Link to='/topics'>Topics</Link></li>
                             <li><Link to='/statistics'>Statistics</Link></li>
                             <li><Link to='/blog'>blog</Link></li>
                         </ul>

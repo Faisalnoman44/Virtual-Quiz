@@ -1,5 +1,6 @@
 import Blog from "../Blog/Blog";
 import ErrorPage from "../ErrorPage/ErrorPage";
+import Home from "../Home/Home";
 import Quiz from "../Quiz/Quiz";
 import Statistics from "../Statistics/Statistics";
 import Topics from "../Topics/Topics";
@@ -15,14 +16,20 @@ const { default: Main } = require("../../layout/Main");
         children:[
             {
                 path:'/',
-                loader:()=>fetch(' https://openapi.programming-hero.com/api/quiz'),
-                element:<Topics></Topics>,
+                element:<Home></Home>,
+                errorElement:<ErrorPage></ErrorPage>,
+            },
+            {
+                path:'/home',
+                element:<Home></Home>,
+                errorElement:<ErrorPage></ErrorPage>,
             },
             {
                 path:'/topics',
+                loader:()=>fetch(' https://openapi.programming-hero.com/api/quiz'),
                 element:<Topics></Topics>,
-                errorElement:<ErrorPage></ErrorPage>,
             },
+            
             {
                 path:'/statistics',
                 loader:async ()=> {
