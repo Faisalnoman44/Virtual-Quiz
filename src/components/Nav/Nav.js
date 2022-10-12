@@ -1,3 +1,5 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 import React from 'react';
 import { Link } from 'react-router-dom';
 
@@ -23,6 +25,7 @@ const Nav = () => {
                         <label tabIndex={0} className="btn btn-ghost btn-circle block md:hidden">
                             <div className=' flex justify-center '>
                                 {/* <FaBars className='text-xl mt-3'></FaBars> */}
+                                <FontAwesomeIcon icon={faBars}></FontAwesomeIcon>
                             </div>
                         </label>
                         <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
