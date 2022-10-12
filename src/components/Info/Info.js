@@ -5,10 +5,12 @@ const Info = () => {
     return (
         <div className='w-10/12 mx-auto mb-5'>
             <div className="card card-side bg-base-100 shadow-xl h-96 mt-10 grid grid-cols-1 md:grid-cols-2">
-                <figure className='md:w-11/12 '><img className='h-56 md:h-full ' src="https://d1ymz67w5raq8g.cloudfront.net/Pictures/480xany/6/5/5/509655_shutterstock_1506580442_769367.jpg" alt="Movie" /></figure>
-                <div className="card-body">
-                    <h2 className="card-title text-2xl md:text-4xl">Try the Virtual QUIZ</h2>
-                    <p className="md:text-2xl">Click the button to participate in the quiz</p>
+                <figure className='md:full '><img className='h-56 md:h-full ' src="https://d1ymz67w5raq8g.cloudfront.net/Pictures/480xany/6/5/5/509655_shutterstock_1506580442_769367.jpg" alt="Movie" /></figure>
+                <div className="card-body flex justify-center pb-10 items-center ">
+                    <div>
+                        <h2 className="card-title text-2xl md:text-4xl">Try the Virtual QUIZ</h2>
+                        <p className="md:text-2xl">Click the button to participate in the quiz</p>
+                    </div>
                 </div>
             </div>
 
