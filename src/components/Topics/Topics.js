@@ -6,9 +6,9 @@ import Topic from '../Topic/Topic';
 const Topics = () => {
     const topics = useLoaderData();
     return (
-        <div className=' mt-12'>
+        <div className=' mt-12 mx-auto'>
             <Info></Info>
-            <div className='grid grid-cols-4 gap-16 w-9/12 mx-auto mt-4'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 md:gap-16 w-9/12 mx-auto mt-4'>
                 {
                     topics.data.map(topic => <Topic
                         key={topic.id}

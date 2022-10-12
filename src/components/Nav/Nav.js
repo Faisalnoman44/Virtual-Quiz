@@ -24,8 +24,7 @@ const Nav = () => {
                     <div className="dropdown dropdown-end">
                         <label tabIndex={0} className="btn btn-ghost btn-circle block md:hidden">
                             <div className=' flex justify-center '>
-                                {/* <FaBars className='text-xl mt-3'></FaBars> */}
-                                <FontAwesomeIcon icon={faBars}></FontAwesomeIcon>
+                                <FontAwesomeIcon className='text-xl mt-3' icon={faBars}></FontAwesomeIcon>
                             </div>
                         </label>
                         <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
