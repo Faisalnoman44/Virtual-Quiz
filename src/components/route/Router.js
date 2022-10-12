@@ -16,13 +16,11 @@ const { default: Main } = require("../../layout/Main");
         children:[
             {
                 path:'/',
-                element:<Home></Home>,
-                errorElement:<ErrorPage></ErrorPage>,
+                element:<Home></Home>
             },
             {
                 path:'/home',
                 element:<Home></Home>,
-                errorElement:<ErrorPage></ErrorPage>,
             },
             {
                 path:'/topics',
